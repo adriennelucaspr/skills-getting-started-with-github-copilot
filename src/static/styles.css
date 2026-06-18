@@ -88,7 +88,7 @@ section h3 {
 }
 
 .participants-list {
-  list-style: disc inside;
+  list-style: none;
   margin: 0;
   padding: 0;
   color: #2f2f2f;
@@ -100,10 +100,29 @@ section h3 {
   justify-content: space-between;
   gap: 10px;
   margin-bottom: 8px;
-  padding: 8px 10px 8px 18px;
-  background: white;
-  border-radius: 4px;
-  list-style-position: inside;
+  padding: 8px 10px 8px 34px;
+  background: linear-gradient(180deg, #ffffff, #f7fbff);
+  border: 1px solid #e6eefc;
+  border-radius: 6px;
+  position: relative;
+}
+
+.participants-list li::before {
+  content: "•";
+  color: #1a237e;
+  font-weight: 700;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+}
+
+.participant-name {
+  flex: 1;
+  margin-left: 6px;
+  color: #0d47a1;
+  font-weight: 600;
 }
 
 .delete-participant {

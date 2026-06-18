@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const listItem = document.createElement("li");
             const nameSpan = document.createElement("span");
             nameSpan.textContent = participant;
+            nameSpan.className = "participant-name";
 
             const deleteButton = document.createElement("button");
             deleteButton.type = "button";
